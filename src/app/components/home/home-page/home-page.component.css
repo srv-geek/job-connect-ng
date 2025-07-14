@@ -1,0 +1,56 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: rgb(255, 255, 255);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Features, How It Works, Counters */
+.features,
+.how-it-works,
+.counters {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Counter Numbers */
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Footer at Bottom */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #212529;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .counter {
+        font-size: 1.8rem;
+    }
+}
