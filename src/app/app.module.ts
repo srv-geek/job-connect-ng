@@ -23,6 +23,7 @@ import { ApplyJobComponent } from './components/applicant/apply-job/apply-job.co
 import { MyApplicationsComponent } from './components/applicant/my-applications/my-applications.component';
 import { JobDetailsComponent } from './components/shared/job-details/job-details.component';
 import { ApplicationDetailsComponent } from './components/shared/application-details/application-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,9 @@ import { ApplicationDetailsComponent } from './components/shared/application-det
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

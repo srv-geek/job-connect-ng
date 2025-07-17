@@ -1,0 +1,40 @@
+.register-section {
+    min-height: calc(100vh - 70px);
+}
+
+/* Logo Image Styling */
+.logo-img {
+    max-width: 60%;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Bootstrap gutter between columns on desktop */
+.register-section .row {
+    --bs-gutter-x: 3rem;
+}
+
+/* Left padding for content on desktop */
+.register-section .col-md-6 {
+    padding-left: 1rem;
+}
+
+/* Responsive adjustments for mobile only */
+@media (max-width: 767.98px) {
+    .logo-img {
+        max-width: 50%;
+    }
+
+    /* Move logo upward on mobile only */
+    .logo-column {
+        transform: translateY(-70px);
+    }
+
+    /* Optional: Padding on section for mobile */
+    .register-section {
+        padding: 2rem 1rem;
+    }
+}
